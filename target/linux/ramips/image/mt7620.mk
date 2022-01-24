@@ -461,6 +461,16 @@ define Device/hiwifi_hc5661
 endef
 TARGET_DEVICES += hiwifi_hc5661
 
+define Device/hiwifi_newhc5661
+  SOC := mt7620a
+  IMAGE_SIZE := 15808k
+  DEVICE_VENDOR := HiWiFi
+  DEVICE_MODEL := NEWHC5661
+  DEVICE_PACKAGES := kmod-sdhci-mt7620
+  SUPPORTED_DEVICES += NEWhc5661
+endef
+TARGET_DEVICES += hiwifi_newhc5661
+
 define Device/hiwifi_hc5761
   SOC := mt7620a
   IMAGE_SIZE := 15808k
